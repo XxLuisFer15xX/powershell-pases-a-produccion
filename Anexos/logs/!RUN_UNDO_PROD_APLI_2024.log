@@ -1,0 +1,38 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240425074146
+Username: GO-0098\Luis Solano
+RunAs User: GO-0098\Luis Solano
+Configuration Name: 
+Machine: GO-0098 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\Luis Solano\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+Process ID: 24204
+PSVersion: 5.1.22621.2506
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+BuildVersion: 10.0.22621.2506
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\!RUN_UNDO_PROD_APLI_2024.log
+> UNDO: Revert changes.
+
+Reversing changes in the database...
+
+Changed database context to 'EXAMPLE'.
+> The tables have been deleted
+
+Changed database context to 'EXAMPLE'.
+> The functions have been deleted
+
+Changed database context to 'EXAMPLE'.
+> The store procedures have been deleted
+
+
+Database updated successfully.
+**********************
+Windows PowerShell transcript end
+End time: 20240425074147
+**********************
