@@ -2,31 +2,31 @@
 # Section to obtain environment variables
 # =======================================
 # Getting environment variables.
-Write-Host "Enter the name of the SQL Server. For example: AZ-DB-CORE-DEV.bcie.org"
-$DJOET_DB_SERVER_NAME = Read-Host "DJOET_DB_SERVER_NAME"
+Write-Host "Enter the name of the SQL Server. For example: EXAMPLE.com"
+$DB_SERVER_NAME = Read-Host "DB_SERVER_NAME"
 Write-Host
-Write-Host "Enter the name of the database. For example: BCIE_DJOET_DB"
-$DJOET_DB_DATABASE_NAME = Read-Host "DJOET_DB_DATABASE_NAME"
+Write-Host "Enter the name of the database. For example: EXAMPLE"
+$DB_DATABASE_NAME = Read-Host "DB_DATABASE_NAME"
 Write-Host
-Write-Host "Enter the username. For example: adminDJOETDb"
-$DJOET_DB_USERNAME = Read-Host "DJOET_DB_USERNAME"
+Write-Host "Enter the username. For example: adminEXAMPLE"
+$DB_USERNAME = Read-Host "DB_USERNAME"
 Write-Host
 Write-Host "Enter the password."
-$DJOET_DB_PASSWORD = Read-Host "DJOET_DB_PASSWORD"
+$DB_PASSWORD = Read-Host "DB_PASSWORD"
 Write-Host
 
 # Verifying that the connection data to the database were entered.
 $count = 0
-if (-not $DJOET_DB_SERVER_NAME) {
+if (-not $DB_SERVER_NAME) {
     $count = $count + 1
 }
-if (-not $DJOET_DB_DATABASE_NAME) {
+if (-not $DB_DATABASE_NAME) {
     $count = $count + 1
 }
-if (-not $DJOET_DB_USERNAME) {
+if (-not $DB_USERNAME) {
     $count = $count + 1
 }
-if (-not $DJOET_DB_PASSWORD) {
+if (-not $DB_PASSWORD) {
     $count = $count + 1
 }
 if ($count -gt 0) {
